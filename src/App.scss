@@ -18,11 +18,11 @@
   }
 }
 
-@import url("https://fonts.googleapis.com/css?family=Roboto:700");
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
 $size: 150px;
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -100,12 +100,12 @@ body {
 }
 
 .cube .sides {
-  @include side("top", rotateX(90deg), 0);
-  @include side("bottom", rotateX(-90deg), 0);
-  @include side("front", rotateY(0deg), 1);
-  @include side("back", rotateY(-180deg), 1);
-  @include side("left", rotateY(-90deg), 1);
-  @include side("right", rotateY(90deg), 1);
+  @include side('top', rotateX(90deg), 0);
+  @include side('bottom', rotateX(-90deg), 0);
+  @include side('front', rotateY(0deg), 1);
+  @include side('back', rotateY(-180deg), 1);
+  @include side('left', rotateY(-90deg), 1);
+  @include side('right', rotateY(90deg), 1);
 }
 
 .text {
