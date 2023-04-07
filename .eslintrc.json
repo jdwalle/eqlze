@@ -26,6 +26,7 @@
         "extensions": [".tsx"]
       }
     ],
+    "import/no-extraneous-dependencies": ["off"], //fishy
     "import/extensions": [
       "error",
       "ignorePackages",

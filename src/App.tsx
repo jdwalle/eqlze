@@ -1,11 +1,21 @@
 import React from 'react';
 import './App.scss';
+import { Text } from '@nextui-org/react';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>EQLZE</h1>
+        <Text
+          h1
+          size={60}
+          css={{
+            textGradient: '45deg, $yellow600 -20%, $red600 100%',
+          }}
+          weight="bold"
+        >
+          EQLZE
+        </Text>
         <div className="container">
           <div className="cube">
             <div className="sides">
