@@ -9,12 +9,12 @@ function App() {
         <div className="container">
           <div className="cube">
             <div className="sides">
-              <div className="top"></div>
-              <div className="right"></div>
-              <div className="bottom"></div>
-              <div className="left"></div>
-              <div className="front"></div>
-              <div className="back"></div>
+              <div className="top" />
+              <div className="right" />
+              <div className="bottom" />
+              <div className="left" />
+              <div className="front" />
+              <div className="back" />
             </div>
           </div>
           <div className="text">In Development</div>
