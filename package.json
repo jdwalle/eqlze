@@ -1,7 +1,7 @@
 {
   "name": "eqlze-app",
   "version": "0.1.0",
-  "homepage": "https://gitname.github.io/eqlze",
+  "homepage": "https://jdwalle.github.io/",
   "private": true,
   "dependencies": {
     "@nextui-org/react": "^1.0.0-beta.12",
