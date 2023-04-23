@@ -1,16 +1,9 @@
 import React from 'react';
 import './coming-soon.scss';
-import { Text, Switch, changeTheme, useTheme } from '@nextui-org/react';
+import { Text, Switch } from '@nextui-org/react';
 
 export const ComingSoon = () => {
-  const { type, isDark } = useTheme();
-
-  const handleChange = () => {
-    const nextTheme = isDark ? 'light' : 'dark';
-    window.localStorage.setItem('data-theme', nextTheme); // you can use any storage
-    changeTheme(nextTheme);
-  };
-
+  const isDark = true;
   return (
     <div className="Coming-Soon">
       <header>
@@ -36,7 +29,7 @@ export const ComingSoon = () => {
             </div>
           </div>
           <div className="text">In Development</div>
-          <Switch checked={isDark} onChange={handleChange} />
+          {/* <Switch checked={isDark} /> */}
         </div>
       </header>
     </div>

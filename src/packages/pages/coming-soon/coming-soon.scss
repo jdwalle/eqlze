@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@import './../../abstract/themes.scss';
+
 $size: 150px;
 
 .Coming-Soon {
   text-align: center;
 
   header {
-    background-color: '$background';
+    background-color: #2c2c44;
+    // @include themify($themes) {
+    //   background-color: themed('backgroundColor');
+    // }
     min-height: 100vh;
     display: flex;
     flex-direction: column;
