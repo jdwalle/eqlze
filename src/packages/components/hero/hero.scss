@@ -1,0 +1,87 @@
+@import './../../abstract/_global-styles.scss';
+
+.hero {
+  height: 1000px;
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(./../../abstract/svgs/hero-bg.svg);
+
+  @include respond-to('xl') {
+    height: 900px;
+  }
+  @include respond-to('m') {
+    height: fit-content;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' preserveAspectRatio='none' viewBox='0 0 540 1440'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1025%26quot%3b)' fill='none'%3e%3crect width='540' height='1440' x='0' y='0' fill='rgba(251%2c 254%2c 254%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c572.33C105.913%2c572.502%2c154.181%2c435.754%2c241.838%2c376.308C326.411%2c318.954%2c446.51%2c314.577%2c504.324%2c230.317C564.795%2c142.185%2c591.09%2c20.758%2c554.766%2c-79.763C519.308%2c-177.887%2c391.456%2c-201.213%2c320.686%2c-277.876C253.209%2c-350.972%2c242.757%2c-476.518%2c151.645%2c-516.454C59.756%2c-556.73%2c-43.913%2c-505.493%2c-141.013%2c-480.247C-241.221%2c-454.193%2c-363.357%2c-451.24%2c-423.459%2c-366.929C-483.548%2c-282.637%2c-431.132%2c-166.296%2c-438.428%2c-63.036C-445.054%2c30.743%2c-502.905%2c126.318%2c-464.367%2c212.069C-425.803%2c297.879%2c-315.664%2c317.856%2c-241.333%2c375.522C-157.622%2c440.466%2c-105.949%2c572.158%2c0%2c572.33' fill='%23e7f9f9'%3e%3c/path%3e%3cpath d='M540 1753.0520000000001C607.963 1762.005 683.316 1789.786 741.485 1753.516 799.673 1717.2350000000001 792.457 1629.858 829.807 1572.35 876.432 1500.56 976.2429999999999 1460.701 986.829 1375.756 997.566 1289.596 943.488 1205.115 883.38 1142.459 824.7339999999999 1081.327 741.804 1052.787 659.155 1034.196 580.479 1016.499 495.55899999999997 1005.2860000000001 422.173 1038.717 352.16700000000003 1070.608 327.634 1154.351 274.109 1209.604 216.288 1269.291 99.702 1293.084 95.36900000000003 1376.0720000000001 90.91000000000003 1461.482 200.44099999999997 1504.402 255.293 1570.022 293.869 1616.171 319.371 1672.051 369.967 1704.577 420.567 1737.106 480.361 1745.196 540 1753.0520000000001' fill='white'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1025'%3e%3crect width='540' height='1440' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  }
+  // @include themify() {
+  //   background: themed('backgroundColor');
+  // }
+  .heroContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    @include respond-to('m') {
+      flex-direction: column;
+    }
+    .text {
+      text-align: left;
+      display: flex;
+      width: calc(50% - 0px);
+      @include respond-to('m') {
+        width: calc(100% - 0px);
+        padding: 0;
+        align-items: center;
+        text-align: center;
+      }
+      padding-left: 5vw;
+      flex-direction: column;
+      justify-content: center;
+      .title {
+        font-size: 5em;
+        .vtitle {
+          opacity: 0.2;
+          font-size: 3.5rem;
+          @include respond-to('s') {
+            font-size: 2rem;
+          }
+        }
+        .v2title {
+        }
+        @include respond-to('s') {
+          font-size: 3.5rem;
+        }
+      }
+      .subtitle {
+        font-size: 1.3rem;
+        margin: 0;
+        margin-top: 1.5rem;
+        opacity: 0.7;
+        @include respond-to('m') {
+          padding: 0 10vw;
+        }
+      }
+    }
+    .illus {
+      display: flex;
+      flex-wrap: nowrap;
+      width: calc(50% - 0px);
+      @include respond-to('m') {
+        width: calc(100% - 0px);
+        justify-content: center;
+      }
+      justify-content: left;
+      svg {
+        width: 1000px;
+        @include respond-to('m') {
+          width: 500px;
+        }
+        overflow: hidden;
+        height: auto;
+      }
+    }
+  }
+}

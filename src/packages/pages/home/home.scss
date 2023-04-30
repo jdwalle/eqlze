@@ -1,0 +1,212 @@
+@import './../../abstract/_global-styles.scss';
+
+.home {
+  .aboutUs {
+    background-color: hsla(198, 78%, 35%, 1);
+    background-image: radial-gradient(at 14% 99%, #41cdfb 0px, transparent 50%),
+      radial-gradient(at 86% 58%, hsla(211, 78%, 35%, 1) 0px, transparent 50%),
+      radial-gradient(at 57% 5%, hsla(189, 100%, 56%, 1) 0px, transparent 50%),
+      radial-gradient(at 0% 0%, hsla(242, 100%, 70%, 1) 0px, transparent 50%);
+    .container {
+      display: flex;
+      width: calc(100% + 0px);
+      @include respond-to('m') {
+        flex-direction: column-reverse;
+      }
+      .illus {
+        color: #fa6920;
+        display: flex;
+        flex-wrap: nowrap;
+        width: calc(50% - 0px);
+        @include respond-to('m') {
+          width: calc(100% - 0px);
+          justify-content: center;
+        }
+        justify-content: left;
+        svg {
+          width: 1000px;
+          @include respond-to('m') {
+            width: 600px;
+          }
+          overflow: hidden;
+          height: auto;
+        }
+      }
+      .textCont {
+        width: calc(50% - 0px);
+        color: white;
+        display: flex;
+        align-items: center;
+        @include respond-to('m') {
+          width: calc(100% - 0px);
+        }
+        .text {
+          padding: 50px 100px 50px 0;
+          @include respond-to('m') {
+            padding: 40px 40px 0 40px;
+          }
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          position: relative;
+          font-size: 1rem;
+          .title {
+            opacity: 0.5;
+            font-size: 4rem;
+            @include respond-to('m') {
+              font-size: 3rem;
+            }
+          }
+          .subtitle {
+            font-size: 6rem;
+            margin-bottom: 1.5vw;
+            @include respond-to('m') {
+              margin-bottom: 2.5vw;
+              font-size: 5rem;
+            }
+          }
+          .subsubtitle {
+            opacity: 0.8;
+            font-size: 1.2rem;
+            margin-bottom: 0.7vw;
+            @include respond-to('m') {
+              margin-bottom: 2.5vw;
+            }
+          }
+          .para {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+
+  .howItWorks {
+    .container {
+      display: flex;
+      width: calc(100% + 0px);
+      padding: 60px 0;
+      @include respond-to('m') {
+        flex-direction: column;
+      }
+      .illus {
+        display: flex;
+        flex-wrap: nowrap;
+        width: calc(50% - 0px);
+        @include respond-to('m') {
+          width: calc(100% - 0px);
+          justify-content: center;
+        }
+        justify-content: left;
+        svg {
+          width: 1000px;
+          @include respond-to('m') {
+            width: 600px;
+          }
+          overflow: hidden;
+          height: auto;
+        }
+      }
+      .textCont {
+        width: calc(50% - 0px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        @include respond-to('m') {
+          width: calc(100% - 0px);
+        }
+        .text {
+          padding-left: 90px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          position: relative;
+          font-size: 1rem;
+          @include respond-to('m') {
+            padding: 0 40px;
+          }
+          .title {
+            font-size: 5rem;
+            @include respond-to('m') {
+              font-size: 4rem;
+            }
+          }
+          .subtitle {
+            color: #5e0e19;
+            opacity: 0.8;
+            font-size: 1.2rem;
+            margin-bottom: 0.7vw;
+            text-align: justify;
+            @include respond-to('m') {
+              margin-bottom: 2.5vw;
+            }
+          }
+        }
+      }
+      .stepsContainer {
+        padding-left: 90px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @include respond-to('m') {
+          padding: 0;
+          flex-direction: column;
+        }
+        #step1 {
+          background-color: #41cdfb;
+
+          .num {
+            background-color: #ff2e58;
+          }
+        }
+        #step2 {
+          background-color: #ff2e58;
+          @include respond-to('l') {
+            align-self: center;
+          }
+          .num {
+            background-color: #a9e504;
+          }
+        }
+        #step3 {
+          background-color: #9ed111;
+          @include respond-to('l') {
+            align-self: flex-end;
+          }
+          .num {
+            background-color: #41cdfb;
+          }
+        }
+        .step {
+          position: relative;
+          margin: 20px;
+          padding: 20px;
+          color: white;
+          border-radius: 20px;
+          background-color: #ff2e58;
+          width: 15rem;
+          min-width: 13rem;
+          box-shadow: 0px 4.1px 8.6px rgba(0, 0, 0, 0.061),
+            0px 13.6px 28.8px rgba(0, 0, 0, 0.089),
+            0px 61px 129px rgba(0, 0, 0, 0.15);
+          .title {
+            font-size: 2rem;
+          }
+          .num {
+            position: absolute;
+            right: 15px;
+            bottom: 10px;
+            padding: 10px;
+            width: 20px;
+            height: 20px;
+            border-radius: 20px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
