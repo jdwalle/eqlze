@@ -1,5 +1,7 @@
+@import './../../abstract/_global-styles.scss';
+
 .contactUs {
-  height: 50rem;
+  padding: 50px 0;
   background-color: hsla(0, 100%, 50%, 1);
   background-image: radial-gradient(
       at 86% 100%,
@@ -7,4 +9,64 @@
       transparent 50%
     ),
     radial-gradient(at 4% 5%, #ff85a7 0px, transparent 50%);
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 90px;
+    @include respond-to('m') {
+      flex-direction: column;
+      padding: 0 40px;
+    }
+    .text {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .title {
+        font-size: 2rem;
+        opacity: 0.8;
+        @include respond-to('s') {
+          font-size: 1.5rem;
+        }
+      }
+      .subtitle {
+        font-size: 7rem;
+        @include respond-to('s') {
+          font-size: 4rem;
+        }
+      }
+      .bottom {
+        .socials {
+          width: fit-content;
+          a {
+            margin: 10px 0;
+            text-decoration: none;
+            svg {
+              width: 30px;
+              height: 30px;
+              margin-right: 10px;
+            }
+            color: white;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+    .logo {
+      display: flex;
+      flex-wrap: nowrap;
+      @include respond-to('m') {
+        justify-content: center;
+      }
+      svg {
+        width: 600px;
+        @include respond-to('m') {
+          width: 600px;
+        }
+        overflow: hidden;
+        height: auto;
+      }
+    }
+  }
 }

@@ -147,13 +147,16 @@
         }
       }
       .stepsContainer {
-        padding-left: 90px;
+        padding: 0 70px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        @include respond-to('m') {
-          padding: 0;
+        @include respond-to('xl') {
+          padding: 0 50px;
           flex-direction: column;
+        }
+        @include respond-to('xs') {
+          padding: 0;
         }
         #step1 {
           background-color: #41cdfb;
@@ -164,7 +167,7 @@
         }
         #step2 {
           background-color: #ff2e58;
-          @include respond-to('l') {
+          @include respond-to('xl') {
             align-self: center;
           }
           .num {
@@ -173,7 +176,7 @@
         }
         #step3 {
           background-color: #9ed111;
-          @include respond-to('l') {
+          @include respond-to('xl') {
             align-self: flex-end;
           }
           .num {
