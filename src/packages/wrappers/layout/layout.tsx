@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavBar } from '../../components/navbar/navbar';
 import { ComingSoon } from '../../pages/coming-soon/coming-soon';
+import { InMaintenance } from '../../pages/maintenance/in-maintenance';
 
 import './layout.scss';
 
@@ -8,8 +9,9 @@ import './layout.scss';
 const Layout = (props: any) => {
   const { children, inMaintenance } = props;
   if (inMaintenance) {
-    return <ComingSoon />;
+    return <InMaintenance />;
   }
+
   return (
     <>
       <NavBar />
