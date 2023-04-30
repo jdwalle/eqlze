@@ -4,7 +4,7 @@ import { LogoSVG } from '../../content/logo';
 import './navbar.scss';
 
 export const NavBar = () => {
-  const collapseItems = ['About', 'How it Works?', 'FAQ', 'Contact'];
+  const collapseItems = ['About', 'How it Works?', 'Contact'];
   return (
     <Navbar className="navbar" variant="floating">
       <Navbar.Toggle showIn="xs" aria-label="toggle navigation" />
@@ -16,10 +16,9 @@ export const NavBar = () => {
         enableCursorHighlight
         variant="highlight-rounded"
       >
-        <Navbar.Link href="#about">About</Navbar.Link>
-        <Navbar.Link href="#howitworks">How it Works?</Navbar.Link>
-        <Navbar.Link href="#">FAQ</Navbar.Link>
-        <Navbar.Link href="#">Contact</Navbar.Link>
+        <Navbar.Link href="#About">About</Navbar.Link>
+        <Navbar.Link href="#How it Works?">How it Works?</Navbar.Link>
+        <Navbar.Link href="#Contact">Contact</Navbar.Link>
       </Navbar.Content>
       {/* <Navbar.Content>
         <Switch shadow color="primary" checked />
@@ -32,7 +31,7 @@ export const NavBar = () => {
               css={{
                 minWidth: '100%',
               }}
-              href="#sdf"
+              href={`#${item}`}
             >
               {item}
             </Link>

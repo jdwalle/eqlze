@@ -268,7 +268,7 @@ const Illustration = () => (
 );
 
 export const ContactUs = () => (
-  <div className="contactUs">
+  <div id="Contact" className="contactUs">
     <div className="container">
       <div className="text">
         <div>

@@ -722,7 +722,7 @@ const AIllustration = () => (
 );
 
 const AboutUs = () => (
-  <section className="aboutUs">
+  <section id="About" className="aboutUs">
     <div className="container">
       <div className="illus">
         <AIllustration />
@@ -1794,63 +1794,61 @@ const HIllustration = () => (
 );
 
 const HowItWorks = () => (
-  <section>
-    <section className="howItWorks">
-      <div className="container">
-        <div className="textCont">
-          <div className="text">
-            <Text
-              className="title"
-              css={{
-                textGradient: '45deg, #fa203c -20%, #fa6920 100%',
-                margin: 0,
-              }}
-            >
-              How it Works ?
-            </Text>
-            <div className="subtitle">
-              Our unique approach to personality assessment combines open-ended
-              questions with cutting-edge AI technology. This allows us to
-              capture the depth and nuance of each users response, providing
-              more customized information and actionable feedback without
-              limiting people to predefined categories.
-            </div>
-          </div>
-          <div className="stepsContainer">
-            <div id="step1" className="step">
-              <div className="title">Complete the Test</div>
-              <p className="content">
-                Answer a series of open-ended questions designed to assess your
-                emotional intelligence.
-              </p>
-              <div className="num">1</div>
-            </div>
-            <div id="step2" className="step">
-              <div className="title">
-                AI <br />
-                Analysis
-              </div>
-              <p className="content">
-                Our advanced AI algorithms analyze your responses to provide
-                in-depth insights into your emotional intelligence.
-              </p>
-              <div className="num">2</div>
-            </div>
-            <div id="step3" className="step">
-              <div className="title">Personalized Report</div>
-              <p className="content">
-                Receive a detailed report outlining your strengths and areas for
-                growth, along with actionable steps to help you improve.
-              </p>
-              <div className="num">3</div>
-            </div>
+  <section id="How it Works?" className="howItWorks">
+    <div className="container">
+      <div className="textCont">
+        <div className="text">
+          <Text
+            className="title"
+            css={{
+              textGradient: '45deg, #fa203c -20%, #fa6920 100%',
+              margin: 0,
+            }}
+          >
+            How it Works ?
+          </Text>
+          <div className="subtitle">
+            Our unique approach to personality assessment combines open-ended
+            questions with cutting-edge AI technology. This allows us to capture
+            the depth and nuance of each users response, providing more
+            customized information and actionable feedback without limiting
+            people to predefined categories.
           </div>
         </div>
-        <div className="illus">
-          <HIllustration />
+        <div className="stepsContainer">
+          <div id="step1" className="step">
+            <div className="title">Complete the Test</div>
+            <p className="content">
+              Answer a series of open-ended questions designed to assess your
+              emotional intelligence.
+            </p>
+            <div className="num">1</div>
+          </div>
+          <div id="step2" className="step">
+            <div className="title">
+              AI <br />
+              Analysis
+            </div>
+            <p className="content">
+              Our advanced AI algorithms analyze your responses to provide
+              in-depth insights into your emotional intelligence.
+            </p>
+            <div className="num">2</div>
+          </div>
+          <div id="step3" className="step">
+            <div className="title">Personalized Report</div>
+            <p className="content">
+              Receive a detailed report outlining your strengths and areas for
+              growth, along with actionable steps to help you improve.
+            </p>
+            <div className="num">3</div>
+          </div>
         </div>
       </div>
-    </section>
+      <div className="illus">
+        <HIllustration />
+      </div>
+    </div>
   </section>
 );
 
